@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="move()"> action</button>
+	</body>
+	<script type="text/javascript" src="js/move.js"> </script>
+	<script type="text/javascript" src="js/web3.min.js"> </script>
+	<script>
+		var web3=new Web3("https://rpc.scroll.io");
+		const privateKey = '';
+		const account = web3.eth.accounts.privateKeyToAccount(privateKey);
+		const contractAddress = '0x6b067F212Deb71a141d036Ea94Cec427909d920F';
+		const contractABI = moveAbi; // 合约 ABI
+		const contract = new web3.eth.Contract(contractABI, contractAddress);
+		const data = contract.methods.action(5).encodeABI();
+		async function move(){
+			const gasPrice = await web3.eth.getGasPrice();
+			const gasLimit = 5000000 ; // 适当设置
+			const nonce = await web3.eth.getTransactionCount(account.address);
+			const tx = {
+			  from: account.address,
+			  to: contractAddress,
+			  gas: gasLimit,
+			  gasPrice: gasPrice,
+			  data: data,
+			  nonce: nonce,
+			};
+			const signedTx = await web3.eth.accounts.signTransaction(tx, privateKey);
+			const receipt = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
+			console.log('Transaction receipt:', receipt);
+			contract.methods.holderIndex().call({from:'0x680188fE4fF6414DAA7A9A48142ECEE387E3b79B'},function(error,total){
+				console.log("当前完成数量：",total)
+				if(parseInt(total)<1514){
+					setTimeout(function(){
+						move()
+					}, 1000);
+				}
+			})
+		}
+				
+		function waitForTransactionConfirmation(transactionHash,callback) {
+			const interval = setInterval(async () => {
+				try {
+					const receipt = await web3.eth.getTransactionReceipt(transactionHash);
+					if (receipt && receipt.blockNumber) {
+						// 交易已经被打包进区块
+						clearInterval(interval);
+						console.log('Transaction confirmed:', receipt);
+						// 在这里可以执行交易完成后的逻辑
+						if(callback){
+							callback();
+						}
+					} else {
+						// 交易尚未被打包进区块
+						console.log('Transaction still pending...');
+					}
+				} catch (error) {
+					console.error('Error checking transaction receipt:', error);
+				}
+			}, 1000);
+		}
+	</script>
+</html>

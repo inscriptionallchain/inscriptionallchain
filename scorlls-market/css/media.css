@@ -1,0 +1,423 @@
+@media screen and (max-width: 1100px){
+.wrap{
+	width: 992px;
+}
+.head .right .nav ul li{
+	margin-left: 20px;
+}
+.head .right .nav ul li:nth-child(1){
+	margin-left: 0;
+}
+.head .right .more{
+	margin-left: 20px;
+}
+.main1 .list .item{
+	width: calc((100% - 40px)/3);
+	margin-right: 20px !important;
+	margin-bottom: 25px;
+}
+.main1 .list .item:nth-child(3n){
+	margin-right: 0px !important;
+}
+}
+@media screen and (max-width: 992px){
+	.page1 .content .right .list1{
+		display: block;
+	}
+	.page1 .content .right .list1 .item{
+		float: none;
+		margin-bottom: 15px;
+	}
+	.page1 .content .right{
+		padding: 15px;
+	}
+	.page1 .content .left{
+		padding: 15px;
+		padding-bottom: 100px;
+	}
+	.page1 .content{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media screen and (max-width: 850px){
+.wap_nav {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 7777;
+}
+.wap_nav .logo {
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.wap_nav .logo img{height: 24px;margin-top: 13px;margin-left: 10px;}
+body{
+	padding-top: 60px;
+}
+
+.pc{
+    display: none;
+}
+.wap{
+    display: block;
+}
+.head .right .nav ul{
+	display: none;
+	position: absolute;
+	background: #fff;
+	text-align: center;
+	width: 120px;
+	left: -45px;
+	top: 49px;
+	z-index: 444;
+	padding: 5px 0px;
+}
+.head .logo img{
+	height: 30px;
+}
+.head {
+
+height: 60px;
+}
+	.head .right .nav ul li{
+		font-size: none;
+		margin: 0px;
+		float: none;
+	}
+.head .logo{padding-top: 15px;}
+	.head .right .more{
+		width: auto;
+		padding: 0px 10px;
+		font-size: 14px;
+		line-height: 30px;
+		margin-left: 10px;
+	}
+.head .right{
+	padding-top: 15px;
+}
+
+.head .right .nav ul li .h2tit a{
+	font-size: 14px;
+	line-height: 20px;
+	display: block;
+}
+
+	.head .right .nav ul:after{
+	width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 10px 10px 10px;
+border-color: transparent transparent #fff transparent;
+		content:"";
+position:absolute;
+top:-10px;
+left: 50%;
+-o-transform: translate(-50%, 0%);
+-webkit-transform: translate(-50%, 0%);
+-moz-transform: translate(-50%, 0%);
+-ms-transform: translate(-50%, 0%);
+transform: translate(-50%, 0%);
+
+
+}
+.titlemodel{
+	font-size: 20px !important;
+}
+.main1 .list .item{
+	width: 100% !important;
+	margin-right: 0px !important;
+	float: none;
+}
+.main1{
+	padding-top: 20px;
+}
+.main1 .list{
+	padding-top: 20px;
+}
+.main1 .search .words{
+	height:50px;
+	padding:0px 10px;
+	font-size:16px;
+	padding-right:60px;
+}
+.main1 .search .send{
+	background-size:50%;
+	width:50px;
+}
+	.main1 .search{
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	.main1 .wrap> .title{
+		font-size:16px;
+		line-height: 1.4;
+	}
+	.main1 .contentDetail .title .le{
+		float:none;
+		text-align:center;
+		font-size: 16px;
+		margin-top: 21px;
+	}
+	.main1 .contentDetail .title .more{
+		float: none;
+		margin: auto;
+		display: block;
+		margin-top: 20px;
+		line-height: 40px;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	.main1 .contentDetail .check_Search .check a{
+		flex: 1;
+		display: block;
+		padding: 0px;
+		text-align: center;
+		font-size: 11px;
+	}
+	.main1 .contentDetail .check_Search .check{
+		float: none;
+		width: 100%;
+		display: flex;
+	}
+	.main1 .contentDetail  .search2{
+		margin: auto;
+		margin-top: 20px;
+		float: none;
+	}
+	.main1 .tableList table tr:nth-child(1){
+		display:none;
+	}
+	.main1 .tableList table td{
+		display: block;
+		float: left;
+		width: 33.333%;
+		padding: 10px 0px;
+		font-size: 12px;
+		line-height: 1.4;
+	}
+	.main1 .tableList table tr{
+		display: block;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-wrap: wrap;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.main1 .contentDetail{
+		padding: 0px 11px;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+	.main1 .tableList table td .val{
+		width:70%;
+	}
+	.pagesize  a,.pagesize  input.num{
+		
+width: 20px;
+		
+line-height: 20px;
+		
+border-width: 1px;
+		
+height: 20px;
+		
+font-size: 12px;
+	}
+	.main1 .Tokens{
+		margin-left: 0px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: 2;
+	}
+	.alertmodel .walletlist .title{
+		font-size: 20px;
+		padding: 20px 0px;
+	}
+	.alertmodel .walletlist .list a .tit{
+		left: 110px;
+	}
+	.alertmodel .walletlist .list{
+
+	}
+	.waptitle{
+		display: block;
+		padding-bottom: 10px;
+		font-size: 14px;
+		color: #000;
+	}
+
+.page1 .content{
+	display: block;
+}
+.page1 .content .left{
+	width: 100%;
+	float: none;
+	margin-bottom: 5vw;
+}
+.page1 .content .right{
+	width: 100%;
+	float: none;
+	margin-left: 0;
+}
+.page1 .content .right .title{
+	font-size: 20px;
+}
+.main1 .tab a{
+	margin: 0px;
+	margin-right: 10px;
+	font-size: 14px;
+	line-height: 30px;
+}
+.main1 .refresh{
+	margin-left: 0px;
+	margin-top: 40px;
+}
+
+.main1 .bd{
+padding:0px;
+}
+	.main1 .list3 .item{
+		width:100%;
+		margin-right: 0;
+		
+	}
+.main1 .blockModel{
+	padding: 15px;
+}
+
+
+.main1 .blockModel.sec2 .bd .model .listTable1 table{
+	width: 500px;
+}
+.main1 .blockModel.sec2 .bd .model .listTable1 {
+	overflow: auto;
+}
+
+.main1 .blockModel.sec2 .bd .model .listTable1 table td a,
+.main1 .blockModel.sec1 .list4 ul li .s2 a{
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 30vw;
+	overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+.main1 .blockModel.sec2 .bd .model .listTable1 table td{
+	font-size: 12px;
+}
+.listTable2 .titles{
+	display: none;
+}
+.listTable2 .item >*{
+	width: 50% !important;
+	padding: 10px 0px;
+	text-align: left !important;
+}
+.listTable2 .waptxt{
+	display: block;
+	vertical-align: middle;
+	opacity: .6;
+}
+.listTable2 .item{
+	
+display: -webkit-box;
+	
+display: -moz-box;
+	
+display: -webkit-flex;
+	
+display: -moz-flex;
+	
+display: -ms-flexbox;
+	
+display: flex;
+	
+flex-wrap: wrap;
+	
+border-bottom: 1px solid #ccc;
+}
+.alertmodel .content1{
+	padding: 0px 15px;
+}
+.alertmodel .models .model .s1{width: 111px;}
+.alertmodel .models .model .s2{width: calc(100% - 111px);}
+.alertmodel .models .model {
+	font-size: 14px;
+	line-height: 35px;
+}
+
+.main1 .linesInfor{
+	zoom: 1;
+	overflow: hidden;
+	display: block;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 15px;
+}
+.main1 .linesInfor p{
+	width: 50%;
+	float: left;
+	margin-right: 0px;
+	border: none;
+	margin-bottom: 15px;
+}
+.main1 .linesInfor p b{
+	display: block;
+	margin-bottom: 4px;
+}
+.main1 .linesInfor .switch{
+	clear: both;
+}
+	.main1 .tabs2 .hdlist .hd a{
+		margin-right:20px;
+		font-size: 14px;
+	}
+	.main1 .tabs2 .hdlist .hd a:last-child{
+		margin-right:0px;
+	}
+.main1 .tabs2 .bd .list5 .item{
+	width:100%;
+	margin-right:0px;
+}
+	.main1 .tabs2 .bd .result_Search .search3{
+		width:150px;
+	}
+	.alertmodel .con2 .item .fill .slide{
+		left: auto;
+		right: 0px;
+		    -o-transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+	}
+	.main1 .blockModel.sec1 .titles .btns{
+		float: none;
+		padding-top: 10px;
+	}
+.main1 .blockModel.sec1 .titles .btns button{
+		margin-left: 0px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		width: calc((100% - 10px)/2);
+	font-size:13px;
+	}
+.main1 .blockModel.sec1 .titles .btns button:nth-child(2n){
+	margin-right:0px;
+}
+}

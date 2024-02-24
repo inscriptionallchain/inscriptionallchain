@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+ <title>Scription</title>
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/media.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+  </head>
+  <body>
+    <div class="loading">
+      <span class="loadingfa xuanzhuan">
+        <img src="images/loading.png" alt="">
+      </span>
+    </div>
+    <div class="head">
+      <div class="wrap">
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="right">
+          <div class="nav">
+            <div class="switch wap"></div>
+            <ul>
+              <li>
+                <h2 class="h2tit">
+                  <a href="index.html">Scription</a>
+                </h2>
+              </li>
+              <li class="current">
+                <h2 class="h2tit">
+                  <a href="tokens.html">Tokens</a>
+                </h2>
+              </li>
+              <li>
+                <h2 class="h2tit">
+                  <a href="mine.html">MyToken</a>
+                </h2>
+              </li>
+              <li>
+                <h2 class="h2tit">
+                  <a href="market.html">Marketplace</a>
+                </h2>
+              </li>
+            </ul>
+          </div>
+          <a href="javascript:void(0)" class="more" id="account">Connect wallet</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="page1">
+      <div class="wrap">
+        <div class="content">
+          <div class="left">
+          <div class="text">
+            <div class="scroll">
+              <pre id="pre" style="margin-left: 30%;">
+              </pre>
+            </div>
+          </div>
+          <div class="list">
+            <ul>
+              <li>
+                <div class="s1">Avascription Number</div>
+                <div class="s2" id="num">0</div>
+              </li>
+              <li>
+                <div class="s1">Creator</div>
+                <div class="s2">
+                  <a href="javascript:void(0)" class="a1" id="creator">0x1b5d...5405</a>
+                  <div class="copy" data-clipboard-text="" id="creator"></div>
+                </div>
+              </li>
+              <li>
+                <div class="s1">Owner</div>
+                <div class="s2">
+                  <a href="" class="a1" id="owner">0x1b5d...5405</a>
+                  <div class="copy" data-clipboard-text="" id="owner2"></div>
+                </div>
+              </li>
+              <li>
+                <div class="s1">Mime Type</div>
+                <div class="s2">text/plain</div>
+              </li>
+              <li>
+                <div class="s1">Created</div>
+                <div class="s2" id="time">half a minute ago</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <div class="title">
+            <span id="name"></span> <b id="code">#0</b>
+          </div>
+          <div class="list1">
+            <div class="item">
+              <div class="s1">Supply</div>
+              <div class="s2" id="supply">0</div>
+            </div>
+            <div class="item">
+              <div class="s1">Holders</div>
+              <div class="s2" id="holders">0</div>
+            </div>
+            <div class="item">
+              <div class="s1">Creator</div>
+              <div class="s2">
+                <a href="" class="a1" id="tokenCreator"></a>
+                <div class="copy" data-clipboard-text="4" id="tokenCreator2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="title">Activity</div>
+          <div class="list2">
+            <table width="100%"  border="0" cellspacing="0" cellpadding="0" class="" id="list2">
+              <tr>
+                <th>Event</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Time</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+<div class="footer">
+  <a href="javascript:void(0)" onclick="showMail()"><img src="images/t5.png" alt=""></a>
+  <a href="https://x.com/ScriptionEVM"><img src="images/t1.png" alt=""></a>
+  <a href="https://t.me/inscriptionallchain"><img src="images/t2.png" alt=""></a>
+</div>
+
+
+
+
+    <div class="alertmodel" id="alertmodel1">
+      <div class="shadow"></div>
+      <div class="center">
+        <div class="walletlist">
+          <div class="title">Connect wallet</div>
+          <div class="list">
+            <a href="#">
+              <img src="images/ic1.png" alt="">
+              <span class="tit">WalletConnect</span>
+            </a>
+            <a href="#">
+              <img src="images/ic2.png" alt="">
+              <span class="tit">MetaMask</span>
+            </a>
+            <a href="#">
+              <img src="images/ic3.png" alt="">
+              <span class="tit">Trust Wallet</span>
+            </a>
+            <a href="#">
+              <img src="images/ic4.png" alt="">
+              <span class="tit">All Wallets</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="success">
+  <img src="images/success.png" alt="">
+  <div class="tit">Copy Success</div>
+  <div class="close"></div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/clipboard.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+	<script src="js/web3.min.js"></script>
+	<script src="js/abi.js"></script>
+	<script src="js/meta.js"></script>
+    
+  </body>
+</html>

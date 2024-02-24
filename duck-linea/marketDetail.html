@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+ <title>Scription</title>
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/media.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+  </head>
+  <body>
+    <div class="loading">
+      <span class="loadingfa xuanzhuan">
+        <img src="images/loading.png" alt="">
+      </span>
+    </div>
+
+
+
+    <div class="head">
+      <div class="wrap">
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="right">
+          <div class="nav">
+            <div class="switch wap"></div>
+            <ul>
+              <li>
+                <h2 class="h2tit">
+                  <a href="index.html">Scription</a>
+                </h2>
+              </li>
+              <li>
+                <h2 class="h2tit">
+                  <a href="tokens.html">Tokens</a>
+                </h2>
+              </li>
+              <li>
+                <h2 class="h2tit">
+                  <a href="mine.html">MyToken</a>
+                </h2>
+              </li>
+              <li class="current">
+                <h2 class="h2tit">
+                  <a href="market.html">Marketplace</a>
+                </h2>
+              </li>
+            </ul>
+          </div>
+          <a href="javascript:void(0)" class="more" id="account">Connect wallet</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="main1">
+      <div class="wrap">
+        <div class="return">
+          <a href="market.html">
+            <b>Tokens / Detail</b>
+          </a>
+        </div>
+        <div class="titles" id="name">
+          <!-- <img src="images/ics.png" alt=""> -->
+        </div>
+        <div class="linesInfor">
+          <p>
+            <b>Floor Price</b>
+            <span id="floorPrice">0</span>
+          </p>
+          <p>
+            <b>Per Mint</b> $ <span id="perMint">0</span>
+          </p>
+          <p>
+            <b>Volume</b>
+            <span id="volume">0</span>
+          </p>
+          <p>
+            <b>Owners</b>
+            <span id="owner">0</span>
+          </p>
+          <p>
+            <b>Sales</b>
+            <span id="sales">0</span>
+          </p>
+          <p>
+            <b>Supply</b>
+            <span id="supply">0</span>
+          </p>
+          <div class="switch"></div>
+        </div>
+        <div class="tabs2" id="tab3">
+          <div class="hdlist">
+            <div class="hd">
+              <a href="javascript:;" class="current">Listed</a>
+              <a href="javascript:;">Activities </a>
+              <a href="javascript:;">Orders</a>
+            </div>
+            <a href="#" class="list">List</a>
+          </div>
+          <div class="bd">
+            <div class="model">
+              <div class="result_Search">
+                <div class="result">Result: <span id="volume2">0</span> <a href="javascript:;" class="btn" onclick="listed()"></a>
+                </div>
+              </div>
+              <div class="list5" id="listContainer">
+              </div>
+            </div>
+            <div class="model">
+              <div class="contentDetail" style="margin: 0px;width: 100%;">
+                <div class="tableList type2">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="">
+                    <tbody id="activityTable">
+                      <tr>
+                        <th>No.</th>
+                        <th>Event</th>
+                        <th>Tick</th>
+                        <th>Price</th>
+                        <th>Amount</th>
+                        <th>Total</th>
+                        <th>From</th>
+                        <th>Time</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="model">
+              <div class="contentDetail" style="margin: 0px;width: 100%;">
+                <div class="tableList type2">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="">
+                    <tbody id="orderTable">
+                      <tr>
+                        <th>No.</th>
+                        <th>Event</th>
+                        <th>Tick</th>
+                        <th>Price</th>
+                        <th>Amount</th>
+                        <th>Total</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Time</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="footer">
+  <a href="javascript:void(0)" onclick="showMail()"><img src="images/t5.png" alt=""></a>
+  <a href="https://x.com/ScriptionEVM"><img src="images/t1.png" alt=""></a>
+  <a href="https://t.me/inscriptionallchain"><img src="images/t2.png" alt=""></a>
+</div>
+
+    <div class="alertmodel" id="alertmodel1">
+      <div class="shadow"></div>
+      <div class="center">
+        <div class="walletlist">
+          <div class="title">Connect wallet</div>
+          <div class="list">
+            <a href="#">
+              <img src="images/ic1.png" alt="">
+              <span class="tit">WalletConnect</span>
+            </a>
+            <a href="#">
+              <img src="images/ic2.png" alt="">
+              <span class="tit">MetaMask</span>
+            </a>
+            <a href="#">
+              <img src="images/ic3.png" alt="">
+              <span class="tit">Trust Wallet</span>
+            </a>
+            <a href="#">
+              <img src="images/ic4.png" alt="">
+              <span class="tit">All Wallets</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="success">
+      <img src="images/success.png" alt="">
+      <div class="tit">Copy Success</div>
+      <div class="close"></div>
+    </div>
+
+
+    <div class="fause">
+      <img src="images/fause.png" alt="">
+      <div class="tit">Please connect your wallet first</div>
+      <div class="close"></div>
+    </div>
+	
+	<div class="alertmodel succeed" id="succeed">
+	  <div class="shadow"></div>
+	  <div class="center">
+		<div class="content1">
+	      <div class="title">
+	      </div>
+		  <div class="close"></div>
+		</div>
+	  </div>
+	</div>
+	<div class="alertmodel fail" id="fail">
+	  <div class="shadow"></div>
+	  <div class="center">
+		<div class="content1">
+	      <div class="title">
+	      </div>
+		  <div class="close"></div>
+		</div>
+	  </div>
+	</div>
+
+
+    <div class="alertmodel" id="alertmodel3">
+      <div class="shadow"></div>
+      <div class="center">
+        <div class="content1">
+          <div class="title">List <b id="name2"> </b> <span id="protocol">lrc-20</span>  for sale<div class="close"></div></div>
+          <div class="con1">
+            <div class="tit1" id="name3">avav</div>
+            <div class="tit2" id="balance">0</div>
+          </div>
+          <div class="con2">
+            <div class="item">
+              <div class="sf1">
+                Price
+              </div>
+              <input type="text" class="sf2" id="price" oninput="sumPrice()">
+              <div class="sf3">ETH</div>
+            </div>
+            <div class="item">
+              <div class="sf1">
+                Amount
+              </div>
+              <input type="text" class="sf2" id="amount" oninput="sumPrice()">
+              <div class="sf3" id="all">All</div>
+             <!-- <div class="fill">
+                <h2 class="h2tit"></h2>
+                <div class="slide">
+                  <div class="tit">Amount calculated by mints</div>
+                  <div class="fil">
+                    <input type="text" class="words2">
+                    <div class="btn">Fill</div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+            <div class="error">Please enter a positive integer  </div>
+            <div class="full">
+              Floor price <b id="floorPrice2" onclick="setPrice()">0</b>, Your price <span id="inputPrice">0</span>
+            </div>
+          </div>
+          <div class="con3">
+            <ul>
+              <!-- <li>
+                <div class="sd1">Expiration</div>
+                <div class="sd2">
+                  <h2 class="h2tit">1 Month</h2>
+                  <div class="slide">
+                    <a href="javascript:;" class="current">1 Month</a>
+                    <a href="javascript:;">1 Year</a>
+                  </div>
+                </div>
+              </li> -->
+              <li>
+                <div class="sd1">Service Fee</div>
+                <div class="sd2" id="sellRate">0</div>
+              </li>
+              <li>
+                <div class="sd1">Total Revenue</div>
+                <div class="sd2"><b id="canGet">0 ETH</b></div>
+              </li>
+              <li>
+                <div class="sd1"></div>
+                <!-- <div class="sd2">$ 0</div> -->
+              </li>
+            </ul>
+          </div>
+          <div class="con4">
+            <button onclick="hiddenList()">Cancel</button>
+            <button id="confirmList">List</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/clipboard.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+	<script src="js/web3.min.js"></script>
+	<script src="js/abi.js"></script>
+	<script src="js/marketDetail.js"></script>
+    <script>
+
+    </script>
+  </body>
+</html>

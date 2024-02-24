@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+ <title>Scription</title>
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="css/media.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+  </head>
+  <body>
+    <div class="loading">
+      <span class="loadingfa xuanzhuan">
+        <img src="images/loading.png" alt="">
+      </span>
+    </div>
+
+
+
+    <div class="head">
+      <div class="wrap">
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="right">
+          <div class="nav">
+            <div class="switch wap"></div>
+            <ul>
+              <li>
+                <h2 class="h2tit">
+                  <a href="index.html">Scription</a>
+                </h2>
+              </li>
+              <li>
+                <h2 class="h2tit">
+                  <a href="tokens.html">Tokens</a>
+                </h2>
+              </li>
+              <li class="current">
+                <h2 class="h2tit">
+                  <a href="mine.html">MyToken</a>
+                </h2>
+              </li>
+              <li>
+                <h2 class="h2tit">
+                  <a href="market.html">Marketplace</a>
+                </h2>
+              </li>
+            </ul>
+          </div>
+          <a href="javascript:void(0)" class="more" id="account">Connect wallet</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="main1" id="tab1">
+      <div class="wrap">
+        <div class="titlemodel teac"> Check out lrc-20 balance of the address. </div>
+        <div class="search">
+          <form action="">
+            <input type="text" placeholder="0x9be ...3a89f" class="words" id="keywords">
+            <input type="button" value="" class="send" id="search">
+          </form>
+        </div>
+        <div class="title">Identify all inscription balances.</div>
+        <div class="tab">
+          <div class="hd">
+            <a href="javascript:;" class="current">Tokens</a>
+            <a href="javascript:;" class="">Blocks</a>
+          </div>
+        </div>
+        <div class="bd">
+          <div class="model">
+            <div class="list3" id="latest">
+              <!-- <div class="item">
+                <div class="bg1">
+                  <div class="title">beec</div>
+                  <div class="val">228,000</div>
+                  <div class="dec">23,912 mints</div>
+                </div>
+                <div class="bg2">#61735060</div>
+              </div> -->
+            </div>
+          </div>
+          <div class="model">
+            <div class="list type2" style="padding-top: 0;" id="latest2">
+             <!-- <div class="item">
+                <a href="#">
+                  <div class="text">
+                    <div class="scroll">
+                      <pre>{
+  "p": "lrc-20",
+  "op": "mint",
+  "tick": "bull",
+  "amt": "100000000""p":
+  "op": "mint",
+  "tick": "bull",
+  "amt": "100000000"
+}
+              </pre>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="infor">
+                      <p>#81611648 </p>
+                      <p>0x446f...d82e9d</p>
+                    </div>
+                    <div class="time">Created a few seconds ago</div>
+                    <div class="infor" style="margin-top:5px; justify-content: center">
+                      <button>Release </button>
+                    </div>
+                  </div>
+                </a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+<div class="footer">
+  <a href="javascript:void(0)" onclick="showMail()"><img src="images/t5.png" alt=""></a>
+  <a href="https://x.com/ScriptionEVM"><img src="images/t1.png" alt=""></a>
+  <a href="https://t.me/inscriptionallchain"><img src="images/t2.png" alt=""></a>
+</div>
+
+    <div class="alertmodel" id="alertmodel1">
+      <div class="shadow"></div>
+      <div class="center">
+        <div class="walletlist">
+          <div class="title">Connect wallet</div>
+          <div class="list">
+            <a href="#">
+              <img src="images/ic1.png" alt="">
+              <span class="tit">WalletConnect</span>
+            </a>
+            <a href="#">
+              <img src="images/ic2.png" alt="">
+              <span class="tit">MetaMask</span>
+            </a>
+            <a href="#">
+              <img src="images/ic3.png" alt="">
+              <span class="tit">Trust Wallet</span>
+            </a>
+            <a href="#">
+              <img src="images/ic4.png" alt="">
+              <span class="tit">All Wallets</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alertmodel" id="alertmodel2">
+      <div class="shadow"></div>
+      <div class="center">
+        <div class="content1">
+          <div class="title">LRC-20 Transfer <div class="close"></div>
+          </div>
+          <div class="models">
+            <div class="model">
+              <div class="s1">Protocol</div>
+              <div class="s2">LRC-20</div>
+            </div>
+            <div class="model">
+              <div class="s1">Tick</div>
+              <div class="s2">
+				<div class="s2" id="tick"></div>
+              </div>
+            </div>
+            <div class="model">
+              <div class="s1">Amount</div>
+              <div class="s2">
+                <input type="text" value="" class="words" id="value">
+              </div>
+            </div>
+            <div class="model">
+              <div class="s1">To</div>
+              <div class="s2">
+                <input type="text" value="" class="words" id="toAddr">
+              </div>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="btn1" id='cancel'>Cancel</button>
+            <button class="btn2" id="transfer">Transfer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	<div class="alertmodel" id="alertmodel3">
+	  <div class="shadow"></div>
+	  <div class="center">
+	    <div class="content1">
+	      <div class="title">Excharge Token <div class="close"></div>
+	      </div>
+	      <div class="models">
+            <div class="model">
+              <div class="s1">Balance</div>
+              <div class="s2">
+				<div class="s2" id="balance"></div>
+              </div>
+            </div>
+	        <div class="model">
+	          <div class="s1">Amount</div>
+	          <div class="s2">
+	            <input type="text" value="" class="words" id="value2">
+	          </div>
+	        </div>
+	      </div>
+	      <div class="btns">
+	        <button class="btn1" id='cancel2'>Cancel</button>
+	        <button class="btn2" id="excharge">excharge</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="alertmodel succeed" id="succeed">
+	  <div class="shadow"></div>
+	  <div class="center">
+		<div class="content1">
+	      <div class="title">
+	      </div>
+		  <div class="close"></div>
+		</div>
+	  </div>
+	</div>
+	<div class="alertmodel fail" id="fail">
+	  <div class="shadow"></div>
+	  <div class="center">
+		<div class="content1">
+	      <div class="title">
+	      </div>
+		  <div class="close"></div>
+		</div>
+	  </div>
+	</div>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/clipboard.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+	<script src="js/web3.min.js"></script>
+	<script src="js/abi.js"></script>
+	<script src="js/mine.js"></script>
+  </body>
+</html>
